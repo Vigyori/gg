@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tpiros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="Arial"
+        android:gravity="left"
+        android:text="Piros"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/vpiros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:fontFamily="Arial"
+        android:gravity="right"
+        android:text="R:"
+        android:textSize="25dp" />
+
+    <SeekBar
+        android:id="@+id/piros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="255"
+        android:progress="1"
+        android:layout_below="@+id/tpiros"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/tzold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="Arial"
+        android:gravity="left"
+        android:text="Zöld"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/vzold"
+        android:layout_alignBottom="@+id/vzold"
+        android:layout_alignLeft="@+id/tpiros"
+        android:layout_alignStart="@+id/tpiros" />
+
+    <TextView
+        android:id="@+id/vzold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="Arial"
+        android:gravity="right"
+        android:text="G:"
+        android:textSize="25dp"
+        android:layout_below="@+id/piros"
+        android:layout_alignRight="@+id/tpiros"
+        android:layout_alignEnd="@+id/tpiros" />
+
+    <SeekBar
+        android:id="@+id/zold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tzold"
+        android:indeterminate="false"
+        android:max="255"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/vkek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="Arial"
+        android:gravity="right"
+        android:text="B:"
+        android:textSize="25dp"
+        android:layout_alignBaseline="@+id/tkek"
+        android:layout_alignBottom="@+id/tkek"
+        android:layout_alignRight="@+id/vzold"
+        android:layout_alignEnd="@+id/vzold" />
+
+    <TextView
+        android:id="@+id/tkek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="Arial"
+        android:gravity="left"
+        android:text="Kék"
+        android:textSize="25dp"
+        android:layout_below="@+id/zold"
+        android:layout_alignLeft="@+id/tzold"
+        android:layout_alignStart="@+id/tzold" />
+
+    <SeekBar
+        android:id="@+id/kek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="255"
+        android:layout_below="@+id/vkek"
+        android:layout_alignLeft="@+id/vkek"
+        android:layout_alignStart="@+id/vkek" />
+
+    <TextView
+        android:id="@+id/hex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kek"
+        android:fontFamily="Arial"
+        android:gravity="center"
+        android:text="Hexadecimal"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hex"
+        android:layout_marginTop="12dp"
+        android:background="#CCCCCC"
+        android:gravity="center"
+        android:text="Szín"
+        android:textSize="65dp" />
+
+</RelativeLayout>
